@@ -2,6 +2,10 @@
 
 A simple Blog Dashboard application built with Nextjs and Material UI. This app allows users to view, create, and view details of blogs. It utilizes virtual scrolling for efficient performance, a toaster notification for user interaction, and RTK Query for managing HTTP services.
 
+### Live Demo
+
+You can view the live demo of the app here: [Live Blog Dashboard](https://blog-dashboard-hebe.vercel.app/)
+
 ## Features
 
 - **Blog Listing**: A list of blogs displayed with virtual scrolling to reduce page load time.
