@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/Assessment%20Urbio/new-blog-dashboard/src/Components/Loader.tsx"],"sourcesContent":["import React from 'react';\r\nimport CircularProgress from '@mui/material/CircularProgress';\r\nimport Box from '@mui/material/Box';\r\n\r\nexport function Loader() {\r\n  return (\r\n    <Box sx={{ display: 'flex',justifyContent:\"center\",alignItems:\"center\",height:'100%',position:\"fixed\",inset:0 }}>\r\n        <CircularProgress />\r\n    </Box>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;AACA;AACA;;;;AAEO,SAAS;IACd,qBACE,qKAAC,+IAAA,CAAA,UAAG;QAAC,IAAI;YAAE,SAAS;YAAO,gBAAe;YAAS,YAAW;YAAS,QAAO;YAAO,UAAS;YAAQ,OAAM;QAAE;kBAC1G,cAAA,qKAAC,yKAAA,CAAA,UAAgB;;;;;;;;;;AAGzB","debugId":null}}]
+}
