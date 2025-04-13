@@ -1,6 +1,6 @@
 'use client'
 
-import { Container, Card, CardContent, Typography, Button, Box } from '@mui/material';
+import { Container, Card, CardContent, Typography, Button } from '@mui/material';
 import { useGetBlogCountQuery, useGetBlogListQuery } from "@/services";
 import Link from 'next/link';
 import { Loader } from '@/components/Loader';
