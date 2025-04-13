@@ -7,7 +7,6 @@ import { IBlogPost } from '@/Interface';
 import CustomInput from '@/components/CustomInput';
 import { useRouter } from 'next/router';
 import { notify } from '@/components/CustomToaster';
-import { Toaster } from 'react-hot-toast';
 
 const validationSchema = Yup.object({
   title: Yup.string()
@@ -30,9 +29,6 @@ export function FormPost(){
         <Typography variant="h5" align="center" color='text.primary' gutterBottom>
           Add New Blog Post
         </Typography>
-
-
-
         <Formik
           initialValues={{ title: '', author: '', body: '' }}
           validationSchema={validationSchema}
@@ -111,8 +107,6 @@ export function FormPost(){
             </form>
           )}
         </Formik>
-              <Toaster/>
-
       </Paper>
     </Container>
   );

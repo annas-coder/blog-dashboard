@@ -33,7 +33,6 @@ export function PostDetail() {
           position: 'relative',
         }}
       >
-       
         <CardContent sx={{ p: 4 }}>
           <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
             {data?.title}
