@@ -15,3 +15,4 @@ A simple Blog Dashboard application built with React and Material UI. This app a
 
 ```bash
 git clone https://github.com/annas-coder/blog-dashboard
+cd blog-dashboard
