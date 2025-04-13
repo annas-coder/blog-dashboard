@@ -41,7 +41,9 @@ export function FormPost(){
               title: values.title,
               author: values.author,
               excerpt: values.body,
-              date: Date.now(),
+              date: Date.now().toLocaleString(),
+              id: '',
+              body: ''
             };
             try {
               await createBlogPost(newPost).unwrap();

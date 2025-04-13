@@ -1,10 +1,11 @@
 'use client'
 
-import { Container, Grid, Card, CardContent, Typography, Button } from '@mui/material';
+import { Container, Card, CardContent, Typography, Button, Box } from '@mui/material';
 import { useGetBlogCountQuery, useGetBlogListQuery } from "@/services";
 import Link from 'next/link';
 import { Loader } from '@/components/Loader';
 import { useCallback, useRef, useState } from 'react';
+import Grid from '@mui/material/Grid';
 
 export const PostList = () =>{
     const page = 1;
@@ -54,29 +55,29 @@ export const PostList = () =>{
     <Container>
       <Grid container spacing={2}>
         {Array.isArray(data) && data.length > 0 && data?.map((post) => (    
-          <Grid item size={{ xs: 12, sm: 4, md: 4 }} key={post.id}>
+          <Grid size={{ xs: 12, sm: 4, md: 4 }} key={post.id}>
             <Card sx={{width:'100%'}}>
               <CardContent>
                 <Typography variant="h6" gutterBottom>{post.title}</Typography>
                 <Typography variant="subtitle2" paragraph>{post?.author}</Typography>
                 <Typography variant="body2" color='text.secondary' paragraph>{post?.excerpt}</Typography>
-                <Button
-                  component={Link}
+
+                <Link
                   href={{
-                      pathname: '/detail',
-                      query: { id: post.id },
-                    }}
-                  variant="contained"
-                  color="primary"
+                    pathname: '/detail',
+                    query: { id: post.id },
+                  }}
+                  passHref
                 >
-                  Read More
-                </Button>
+                  <Button variant="contained" color="primary">
+                     Read More
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </Grid>
         ))}
     </Grid>
-    
       <div ref={loadMoreRef} style={{ height: '20px' }} />
      
       {

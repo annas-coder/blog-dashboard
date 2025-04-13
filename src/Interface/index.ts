@@ -4,7 +4,7 @@ export interface IBlogPost {
   author: string;
   body: string;
   excerpt?: string;
-  date? : Date | undefined | string ;
+  date? :  string ;
 }
 
 export interface INotify {
